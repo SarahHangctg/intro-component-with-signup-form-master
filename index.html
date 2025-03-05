@@ -30,11 +30,15 @@
       </div>
 
       <div class="contact_form">
-        <form action="">
-          <input type="text" id="fname" name="fname" placeholder="First Name" required><br>
-          <input type="text" id="lname" name="lname" placeholder="Last Name" required><br>
-          <input type="email" id="email" name="email" placeholder="Email Address" required><br>
-          <input type="password" id="pwd" name="pwd" placeholder="Password" required><br>
+        <form action="" id="contact_form">
+          <input type="text" id="fname" name="fname" placeholder="First Name">
+          <div class="error_message" id="fname_err">First Name cannot be empty</div>
+          <input type="text" id="lname" name="lname" placeholder="Last Name">
+          <div class="error_message" id="lname_err">Last Name cannot be empty</div>
+          <input type="email" id="email" name="email" placeholder="Email Address">
+          <div class="error_message" id="email_err">Looks like this is not an email</div>
+          <input type="password" id="password" name="password" placeholder="Password">
+          <div class="error_message" id="password_err">Password cannot be empty</div>
           <input type="submit" value="Claim your free trial">
         </form>
 
@@ -45,7 +49,6 @@
     </div>
 
   </div>
-
-  <script src="scripts.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

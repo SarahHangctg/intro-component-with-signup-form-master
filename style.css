@@ -72,7 +72,7 @@ h1 {
 .contact_form input {
   width: 100%;
   padding: 1rem;
-  margin: 0.5rem 0;
+  margin: 1rem 0;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   border: 1px solid rgb(210, 210, 210);
@@ -89,6 +89,14 @@ h1 {
   transition: 0.3s;
 }
 
+.error_message {
+  font-size: 10px;
+  text-align: right;
+  color: var(--red);
+  font-style: italic;
+  font-weight: 500;
+  display: none;
+}
 
 .contact_form input[type=submit]:hover {
   cursor: pointer;
@@ -108,4 +116,13 @@ h1 {
 .terms span {
   color: var(--red);
   font-weight: bold;
+}
+
+@media (max-width: 850px) {
+  .description, .trial_and_form {
+    width: 100%;
+  }
+  h1, p {
+    text-align: center;
+  }
 }
